@@ -1,0 +1,132 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title size="normal">IA Adivinhar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-select placeholder="Mentalize um animal" [multiple]="true">
+        <ion-select-option disabled>Humano</ion-select-option>
+        <ion-select-option disabled>Cachorro</ion-select-option>
+        <ion-select-option disabled>Girafa</ion-select-option>
+        <ion-select-option disabled>Gato</ion-select-option>
+        <ion-select-option disabled>Onça</ion-select-option>
+        <ion-select-option disabled>Camelo</ion-select-option>
+        <ion-select-option disabled>Sapo</ion-select-option>
+        <ion-select-option disabled>Flamingo</ion-select-option>
+        <ion-select-option disabled>urubu</ion-select-option>
+        <ion-select-option disabled>Peixe</ion-select-option>
+        <ion-select-option disabled>Caracol</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-radio-group>
+      <ion-list-header>Ele tem garras?</ion-list-header>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio value="sim1"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio value="nao1"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <ion-radio-group>
+      <ion-list-header>ele pode ter mais de 1,80m?</ion-list-header>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio value="sim2"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio value="nao2"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <ion-radio-group>
+      <ion-list-header>ele tem pluma por parte do corpo?</ion-list-header>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio value="sim3"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio value="nao3"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <ion-radio-group>
+      <ion-list-header>ele tem dentes afiados?</ion-list-header>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio value="sim4"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio value="nao4"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <ion-radio-group>
+      <ion-list-header>ele é onívoro?</ion-list-header>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio value="sim5"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio value="nao5"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <ion-radio-group>
+      <ion-list-header>ele resiste ao calor extremo?</ion-list-header>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio value="sim6"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio value="nao6"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+
+    <ion-radio-group>
+      <ion-list-header>ele tem cauda?</ion-list-header>
+      <ion-item>
+        <ion-label>Sim</ion-label>
+        <ion-radio value="sim7"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Não</ion-label>
+        <ion-radio value="nao7"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-radio-group>
+    <ion-list-header>Ele tem contato com a água por bastante tempo?</ion-list-header>
+    <ion-item>
+      <ion-label>Sim</ion-label>
+      <ion-radio value="sim8"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Não</ion-label>
+      <ion-radio value="nao8"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+  <ion-button (click)="verificarRadio()">Verificar seleção</ion-button>
+</ion-content>
